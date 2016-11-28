@@ -18,6 +18,7 @@ public class ChaPingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         layout = inflater.inflate(R.layout.fragment_cha_ping, container, false);
         return layout;
+
     }
 
     @Override

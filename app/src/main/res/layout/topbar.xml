@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_top_height"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/top_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@mipmap/right_icon"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/top_mine_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/mine_icon" />
+        <ImageView
+            android:id="@+id/top_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/top_mine_btn"
+            android:layout_alignTop="@id/top_mine_btn"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/search_icon" />
+        <ImageView
+            android:id="@+id/top_share_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/top_search_btn"
+            android:layout_alignTop="@id/top_mine_btn"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/shear_icon"/>
+
+
+        <ImageView
+            android:id="@+id/chayu_logo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/logo_icon" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ChaYu</string>
+    <string name="home_page">首页</string>
+    <string name="cha_ping">茶评</string>
+    <string name="shi_ji">市集</string>
+    <string name="quan_zi">圈子</string>
+    <string name="wen_zhang">文章</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

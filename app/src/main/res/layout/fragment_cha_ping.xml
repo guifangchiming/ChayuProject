@@ -1,12 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tea_conment_scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/cha_ping" />
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/ic_launcher"
+            >
+            <android.support.v4.view.ViewPager
+                android:id="@+id/tea_conment_title_viewpage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:background="#33000000"
+                >
+
+                <TextView
+                    android:id="@+id/tea_conment_fenlei"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="测试"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:background="#ac4949"
+                    />
+
+                <TextView
+                    android:id="@+id/tea_conment_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:text="测试文档"
+                    android:layout_marginLeft="20dp"
+                    android:singleLine="true"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_dot"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tea_conment_tab"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:tabIndicatorColor="@null"
+
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tea_conment_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </LinearLayout>
+
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>
